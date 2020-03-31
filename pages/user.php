@@ -8,7 +8,7 @@ $info = getInfo($id,$pass);
 
 <html>
 <body>
-Username: <?php echo $info["username"]?>
+UsernameTest: <?php echo $info["username"]?>
 </body>
 <html>
 
