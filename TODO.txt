@@ -1,0 +1,26 @@
+	List of tasks and how to get going:
+
+(done)1. Add all extra form fields for registration page. (fullname, email(login), hofstraid).
+Edit pages/register.php file. Make sure you create a new branch before you start adding your code (git branch whatever). Also need but can be done later validation for email (format, dublicates) and password(alphanumeric).
+
+2. On the user account page all information need to be displayed according to the mockup screens. Edit pages/user.php and getInfo function in utils/User.php.
+
+3. Fix the login page so it redirects user after successful login to his account page or informs about the wrong credential. login.php and  
+
+(done)4. Create the databases with all fields for Users and Books.
+
+5. Book.php functions according to architechture documentation.
+
+6. Logout clear the SESSION vars and redirect to login.
+
+7. In sell.php make condition a drop down to select from.(mint, good, poor)
+
+8. Add password confirmation field and logic on the resitration page.
+
+9. Verify input on the registration page.
+
+10. Sanitize all inputs to prevent sql injection attacks. 
+
+11. pages/books.php (display all books which are inlisted by user)
+
+12. Search page.

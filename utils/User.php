@@ -1,5 +1,6 @@
 <?php
-require_once("DB.php");
+require_once("users_DB.php");
+
 
 function getInfo($uid, $pass) {
 	
@@ -18,9 +19,16 @@ function authUser($uname,$pass) {
 	return $authdata;
 }
 
-function insertUser($uname, $pass) {
+function insertUser($email, $pass, $fullname, $hofstraid) {
+
 	$db = connect();
-	$db->exec("CREATE TABLE users(id INTEGER PRIMARY KEY, username TEXT, password TEXT)");
-	$db->exec("INSERT INTO users(username,password) VALUES ('$uname','$pass')");
-	return $db->lastInsertRowID();
+	$res = $db->exec("INSERT INTO users(email,password,fullname,hofstraid) VALUES ('$email','$pass','$fullname','$hofstraid')");
+	return $res;
+}
+
+function authenticated($uid, $upass) {
+	
+	$db = connect();
+	$res = $db->query("SELECT * FROM users WHERE userid='$uid' AND password='$upass'");
+	return $res!=null;
 }

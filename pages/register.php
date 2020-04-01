@@ -2,24 +2,29 @@
 <body>
 
 <form action="" method="post">
-Username:<input type="text" name="username"><br>
+Email:<input type="text" name="username"><br>
 Password: <input type="password" name="password"><br>
+Full name:<input type="text" name="fullname"><br>
+Hofstra ID:<input type="text" name="hofstraid"><br>
 <input type="submit" name="register-user" value="Submit">
 </form>
 
 </body>
 </html>
 <?php
+require_once("../utils/User.php");
+
 session_start();
 
 if(!empty($_POST["register-user"])) {
 
 	$username = $_POST["username"]; //still need to validate
 	$password = hash('sha256',$_POST["password"]);
-	require_once("../utils/User.php");
+	$fullname = $_POST["fullname"];
+	$hofstraid = $_POST["hofstraid"];
 	//check if doesn't exist
 	
-	$insertId = insertUser($username, $password);
+	$insertId = insertUser($email, $password, $fullname, $hofstraid);
 	echo $insertId;
 }
 ?>
