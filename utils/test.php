@@ -21,11 +21,15 @@ if(1==0) {
 	print $res;
 }
 
-if(1==1) {
+if(1==0) {
 	$res = insertBook('12345','Selinger','Catcher in the Rye','$15.50','Mint','4',hashp('ark'));
 	print $res;
 }
 
+if(1==1) {
+	$res = authUser('ark',hashp('ark'));
+	print $res==null;
+}
 //print_r($res);
 //print count($res);
 //print $res!=null;

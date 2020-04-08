@@ -5,7 +5,7 @@ Edit pages/register.php file. Make sure you create a new branch before you start
 
 2. On the user account page all information need to be displayed according to the mockup screens. Edit pages/user.php and getInfo function in utils/User.php.
 
-3. Fix the login page so it redirects user after successful login to his account page or informs about the wrong credential. login.php and  
+(done)3. Fix the login page so it redirects user after successful login to his account page or informs about the wrong credential. login.php and  
 
 (done)4. Create the databases with all fields for Users and Books.
 
@@ -13,7 +13,7 @@ Edit pages/register.php file. Make sure you create a new branch before you start
 
 6. Logout clear the SESSION vars and redirect to login.
 
-7. In sell.php make condition a drop down to select from.(mint, good, poor)
+(waiting for push)7. In sell.php make condition a drop down to select from.(mint, good, poor)
 
 8. Add password confirmation field and logic on the resitration page.
 

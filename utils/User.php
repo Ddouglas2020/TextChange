@@ -5,7 +5,7 @@ require_once("users_DB.php");
 function getInfo($uid, $pass) {
 	
 	$db = connect();
-	$res = $db->query("SELECT * FROM users WHERE id='$uid' AND password='$pass'");
+	$res = $db->query("SELECT * FROM users WHERE userid='$uid' AND password='$pass'");
 	$arr = $res->fetchArray(1);
 	return $arr;
 }
@@ -13,7 +13,8 @@ function getInfo($uid, $pass) {
 function authUser($uname,$pass) {
 
 	$db = connect();
-	$res = $db->query("SELECT id,password FROM users WHERE username='$uname' AND password='$pass'");
+	$res = $db->query("SELECT userid,password FROM users WHERE email='$uname' AND password='$pass'");
+	
 	$authdata = $res->fetchArray(1);
 	
 	return $authdata;
