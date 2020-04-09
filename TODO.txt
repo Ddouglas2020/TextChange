@@ -13,7 +13,7 @@ Edit pages/register.php file. Make sure you create a new branch before you start
 
 (done)6. Logout clear the SESSION vars and redirect to login.
 
-(waiting for push)7. In sell.php make condition a drop down to select from.(mint, good, poor)
+(done)7. In sell.php make condition a drop down to select from.(mint, good, poor)
 
 8. Add password confirmation field and logic on the resitration page.
 
@@ -21,6 +21,8 @@ Edit pages/register.php file. Make sure you create a new branch before you start
 
 10. Sanitize all inputs to prevent sql injection attacks. 
 
-11. pages/books.php (display all books which are inlisted by user)
+11. pages/books.php (display all books which are inlisted by user). Also create link for purhasing the books you want.
 
 12. Search page.
+
+13. Email (relates to 11)
