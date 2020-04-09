@@ -8,9 +8,8 @@ if(!empty($_POST["login-user"])) {
 	$password = hash('sha256',$_POST["password"]);
 	
 	$authdata = authUser($username, $password);
-	$error = '';
 	if($authdata==null) {
-		$error = 'Login/password is invalid';			
+		echo 'Login or password is invalid';			
 	} else {
 		$_SESSION["uid"] = $authdata["userid"];
 		$_SESSION["upass"] = $authdata["password"];

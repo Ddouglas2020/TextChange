@@ -2,7 +2,7 @@
 <body>
 
 <form action="" method="post">
-Email:<input type="text" name="username"><br>
+Email:<input type="text" name="email"><br>
 Password: <input type="password" name="password"><br>
 Full name:<input type="text" name="fullname"><br>
 Hofstra ID:<input type="text" name="hofstraid"><br>
@@ -18,7 +18,7 @@ session_start();
 
 if(!empty($_POST["register-user"])) {
 
-	$username = $_POST["username"]; //still need to validate
+	$email = $_POST["email"]; //still need to validate
 	$password = hash('sha256',$_POST["password"]);
 	$fullname = $_POST["fullname"];
 	$hofstraid = $_POST["hofstraid"];
