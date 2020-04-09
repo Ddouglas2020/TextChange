@@ -17,7 +17,7 @@ Edit pages/register.php file. Make sure you create a new branch before you start
 
 8. Add password confirmation field and logic on the resitration page.
 
-9. Verify input on the registration page.
+9. Verify input on the registration page. TEST
 
 10. Sanitize all inputs to prevent sql injection attacks. 
 
