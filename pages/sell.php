@@ -1,13 +1,20 @@
-<html>
-<body>
+<html><body>
 
 <form action="" method="post">
-Sell book form<br>
-Author:<input type="text" name="author"><br>
+Please input your textbook's information:<br>
+<br>
+Author: <input type="text" name="author"><br>
 Title: <input type="text" name="title"><br>
 ISBN: <input type="text" name="isbn"><br>
 Price: <input type="text" name="price"><br>
-Condition: <input type="text" name="condition"><br>
+<label>Condition: </label>
+<select id = "condition">
+<option value = "mint">Mint</option>
+<option value = "good">Good</option>
+<option value = "poor">Poor</option>
+</select>
+<br>
+<br>
 <input type="submit" name="sell-book" value="Submit">
 </form>
 
@@ -20,11 +27,10 @@ session_start();
 
 if(!empty($_POST["sell-book"])) {
 	//get session vars
-		
+
 	$userid = $_SESSION["uid"];
 	$password = $_SESSION["upass"];
 
-	
 	$res = insertBook($isbn, $author, $title, $price, $condition, $userid, $password);
 	echo $res;
 }
