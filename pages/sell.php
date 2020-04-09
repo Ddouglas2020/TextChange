@@ -30,8 +30,16 @@ if(!empty($_POST["sell-book"])) {
 
 	$userid = $_SESSION["uid"];
 	$password = $_SESSION["upass"];
+	$isbn = $_POST["isbn"];
+	$author = $_POST["author"];
+	$title = $_POST["title"];
+	$price = $_POST["price"];
+	$condition = $_POST["sell-book"];
 
 	$res = insertBook($isbn, $author, $title, $price, $condition, $userid, $password);
 	echo $res;
+	if ($res == 1){
+		header("location:user.php");
+	}
 }
 ?>
