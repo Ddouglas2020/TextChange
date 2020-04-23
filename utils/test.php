@@ -16,7 +16,7 @@ if (1==0) {
 	}
 }
 
-if(1==1) {
+if(1==0) {
 	$res = insertUser('test2@test', hashp('test'), 'Test Test', '2342348');
 	print $res;
 }
@@ -29,6 +29,11 @@ if(1==0) {
 if(1==0) {
 	$res = authUser('ark',hashp('ark'));
 	print $res==null;
+}
+
+if(1==1) {
+	$res = searchBooks('ark');
+	print_r($res);
 }
 //print_r($res);
 //print count($res);

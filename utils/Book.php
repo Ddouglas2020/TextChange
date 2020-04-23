@@ -29,5 +29,11 @@ function getBooks($uid){ //create a multidimensional array or create multiple ar
 	}
 	return $resultArr;*/
 	return $arr;
-	
+}
+
+function searchBooks($query) {
+	$db = connect_books();
+	$res = $db->query("SELECT * FROM books WHERE author='$query' OR title='$query' OR isbn='$query'");
+	$arr = $res->fetchArray(1);
+	return $arr;
 }
