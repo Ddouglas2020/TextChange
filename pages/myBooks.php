@@ -2,21 +2,41 @@
 require_once("../utils/Book.php");
 session_start();
 $id = $_SESSION["uid"];
-$info = getBooks($id);
+$arr = getBooks($id);
+
+function array2Html($array, $table = true)
+{
+    $out = '';
+    foreach ($array as $key => $value) {
+        if (is_array($value)) {
+            if (!isset($tableHeader)) {
+                $tableHeader =
+                    '<th>' .
+                    implode('</th><th>', array_keys($value)) .
+                    '</th>';
+            }
+            array_keys($value);
+	    $out .= '<tr>';
+            $out .= array2Html($value, false);
+            $out .= '</tr>';
+	} else {
+            $out .= "<td>$value</td>";
+        }
+    }
+
+    if ($table) {
+        return '<table>' . $tableHeader . $out . '</table>';
+    } else {
+        return $out;
+    }
+}
 ?>
 
 <html>
-<h1>Books for Sale</h1><br>
-<h2>Book 1</h2>
 <body>
-<!-- ArrInfo: <?php print_r($info);?><br> -->
-Title: <?php echo $info['title']?><br>
-Author: <?php echo $info['author']?><br>
-ISBN: <?php echo $info['isbn']?><br>
-Price: <?php echo $info['condition']?><br>
-Condition: <?php echo $info['userid']?><br><br>
+	<?php echo array2Html($arr);?>
 
-<a href="user.php" title="return">Return to Homepage</a><br>
+	<a href="user.php" title="return">Return to Homepage</a><br>
 </body>
 <html>
 

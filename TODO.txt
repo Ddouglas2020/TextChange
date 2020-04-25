@@ -9,7 +9,7 @@ Edit pages/register.php file. Make sure you create a new branch before you start
 
 (done)4. Create the databases with all fields for Users and Books.
 
-5. Book.php functions according to architechture documentation.
+(done)5. Book.php functions according to architechture documentation.
 
 (done)6. Logout clear the SESSION vars and redirect to login.
 
@@ -21,8 +21,14 @@ Edit pages/register.php file. Make sure you create a new branch before you start
 
 10. Sanitize all inputs to prevent sql injection attacks. 
 
-11. pages/books.php (display all books which are inlisted by user). Also create link for purhasing the books you want.
+(done)11. pages/books.php (display all books which are inlisted by user). Also create link for purhasing the books you want.
 
-12. Search page.
+12. Search page: Implement sorting.
 
-13. Email (relates to 11)
+(done)13. Email (relates to 11)
+
+14. Website routing! Create all the nessesary links to navigate throughoput the website smoothly (without typing url).
+
+15. CSS!!! Make it look good.
+
+

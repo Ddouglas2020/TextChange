@@ -8,10 +8,10 @@ Title: <input type="text" name="title"><br>
 ISBN: <input type="text" name="isbn"><br>
 Price: <input type="text" name="price"><br>
 <label>Condition: </label>
-<select id = "condition">
-<option value = "mint">Mint</option>
-<option value = "good">Good</option>
-<option value = "poor">Poor</option>
+<select name = "condition">
+<option value = "<Mint">Mint</option>
+<option value = "Good">Good</option>
+<option value = "Poor">Poor</option>
 </select>
 <br>
 <br>
@@ -34,7 +34,7 @@ if(!empty($_POST["sell-book"])) {
 	$author = $_POST["author"];
 	$title = $_POST["title"];
 	$price = $_POST["price"];
-	$condition = $_POST["sell-book"];
+	$condition = $_POST["condition"];
 
 	$res = insertBook($isbn, $author, $title, $price, $condition, $userid, $password);
 	echo $res;

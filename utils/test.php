@@ -31,10 +31,28 @@ if(1==0) {
 	print $res==null;
 }
 
-if(1==1) {
+if(1==0) {
 	$res = searchBooks('ark');
 	print_r($res);
 }
+
+if(1==0) {
+	$res = getBooks('1');
+	print_r($res);
+}
+
+if(1==0) {
+	buyBook('1','1');
+}
+
+if(1==0) {
+	print_r(getBookInfo(14));
+}
+
+if(1==1) {
+	print buyBook(1,1);
+}
+
 //print_r($res);
 //print count($res);
 //print $res!=null;

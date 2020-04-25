@@ -26,5 +26,7 @@ if(!empty($_POST["register-user"])) {
 	
 	$insertId = insertUser($email, $password, $fullname, $hofstraid);
 	echo $insertId;
+	header("location:login.php");
+
 }
 ?>

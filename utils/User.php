@@ -2,10 +2,10 @@
 require_once("users_DB.php");
 
 
-function getInfo($uid, $pass) {
+function getUserInfo($uid) {
 	
 	$db = connect();
-	$res = $db->query("SELECT * FROM users WHERE userid='$uid' AND password='$pass'");
+	$res = $db->query("SELECT * FROM users WHERE userid='$uid'");
 	$arr = $res->fetchArray(1);
 	return $arr;
 }
