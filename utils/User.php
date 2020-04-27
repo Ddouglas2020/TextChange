@@ -1,6 +1,18 @@
 <?php
 require_once("users_DB.php");
 
+function regCheck($email, $hofstraid) {
+	$db = connect();
+	$res = $db->query("SELECT * FROM users WHERE email='$email' OR hofstraid='$hofstraid'");
+	$arr = $res->fetchArray(1);
+	if (sizeof($arr) == 1) {
+		return NULL;
+	}
+	else {
+		return TRUE;
+	}
+}
+
 
 function getUserInfo($uid) {
 	

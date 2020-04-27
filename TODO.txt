@@ -15,9 +15,9 @@ Edit pages/register.php file. Make sure you create a new branch before you start
 
 (done)7. In sell.php make condition a drop down to select from.(mint, good, poor)
 
-8. Add password confirmation field and logic on the resitration page.
+(done)8. Add password confirmation field and logic on the resitration page.
 
-9. Verify input on the registration page. TEST
+(done)9. Verify input on the registration page. TEST
 
 10. Sanitize all inputs to prevent sql injection attacks. 
 
