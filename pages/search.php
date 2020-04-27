@@ -1,7 +1,7 @@
 <html><body>
 
 <form action="" method="post">
-Search:<input type="text" name="search-text"><br>
+<input type="text" name="search-text"><br>
 <input type="submit" name="search-book" value="Search">
 </form>
 
