@@ -26,9 +26,10 @@ if(1==0) {
 	print $res;
 }
 
-if(1==0) {
-	$res = authUser('ark',hashp('ark'));
-	print $res==null;
+if(1==1) {
+	$res = authUser('aayvazyan1@pride.hofstra.edu',hashp('Goodyear123'));
+	$res = authUser('ark@mail.com',hashp('ark'));
+	print_r($res);
 }
 
 if(1==0) {
@@ -49,7 +50,7 @@ if(1==0) {
 	print_r(getBookInfo(14));
 }
 
-if(1==1) {
+if(1==0) {
 	print buyBook(1,1);
 }
 
