@@ -9,7 +9,7 @@ ISBN: <input type="text" name="isbn"><br>
 Price: <input type="text" name="price"><br>
 <label>Condition: </label>
 <select name = "condition">
-<option value = "<Mint">Mint</option>
+<option value = "Mint">Mint</option>
 <option value = "Good">Good</option>
 <option value = "Poor">Poor</option>
 </select>
@@ -39,7 +39,7 @@ if(!empty($_POST["sell-book"])) {
 	$res = insertBook($isbn, $author, $title, $price, $condition, $userid, $password);
 	echo $res;
 	if ($res == 1){
-		header("location:user.php");
+		header("location:myBooks.php");
 	}
 }
 ?>

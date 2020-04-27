@@ -1,4 +1,27 @@
-<?php //header("location:login.php"); why??? ?>
+<?php
+require_once("../utils/User.php");
+
+session_start();
+
+if(!empty($_POST["register-user"])) {
+	ob_start();
+
+	$email = $_POST["email"]; //still need to validate
+	$password = hash('sha256',$_POST["password"]);
+	$fullname = $_POST["fullname"];
+	$hofstraid = $_POST["hofstraid"];
+	if (regCheck($email, $hofstraid) == TRUE){
+		echo "This login already exists";
+}
+	else {
+		$insertId = insertUser($email, $password, $fullname, $hofstraid);
+
+		header("location:login.php"); 
+		exit;
+	}
+
+}
+?>
 <html>
 <body>
 <meta name="viewport" content="width=device-width, initial-scaled=1">
@@ -145,24 +168,4 @@ confirmpass.onkeyup = validatePassword;
 </body>
 </html>
 
-<?php
-require_once("../utils/User.php");
 
-session_start();
-
-if(!empty($_POST["register-user"])) {
-	ob_start();
-
-	$email = $_POST["email"]; //still need to validate
-	$password = hash('sha256',$_POST["password"]);
-	$fullname = $_POST["fullname"];
-	$hofstraid = $_POST["hofstraid"];
-	if (regCheck($email, $hofstraid) == TRUE){
-		echo "This login already exists";
-}
-	else {
-		$insertId = insertUser($email, $password, $fullname, $hofstraid);
-	}
-
-}
-?>

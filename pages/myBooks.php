@@ -19,7 +19,9 @@ function array2Html($array, $table = true)
 	    $out .= '<tr>';
             $out .= array2Html($value, false);
             $out .= '</tr>';
-	} else {
+	} else if ($key=='bookid') {
+		$out .= "<td><a href=\"deleteBook.php?bookid=$value\"><div style=\"height:100%;width:100%\">Remove</div></a></td>";
+        } else {
             $out .= "<td>$value</td>";
         }
     }

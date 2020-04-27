@@ -26,7 +26,7 @@ if(1==0) {
 	print $res;
 }
 
-if(1==1) {
+if(1==0) {
 	$res = authUser('aayvazyan1@pride.hofstra.edu',hashp('Goodyear123'));
 	$res = authUser('ark@mail.com',hashp('ark'));
 	print_r($res);
@@ -54,6 +54,9 @@ if(1==0) {
 	print buyBook(1,1);
 }
 
+if(1==1) {
+	print deleteBook(2,12);
+}
 //print_r($res);
 //print count($res);
 //print $res!=null;

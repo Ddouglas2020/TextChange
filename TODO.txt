@@ -1,34 +1,11 @@
-	List of tasks and how to get going:
+1. Sanitize all inputs to prevent sql injection attacks. 
 
-(done)1. Add all extra form fields for registration page. (fullname, email(login), hofstraid).
-Edit pages/register.php file. Make sure you create a new branch before you start adding your code (git branch whatever). Also need but can be done later validation for email (format, dublicates) and password(alphanumeric).
+2. Search page: Implement sorting.
 
-(done)2. On the user account page all information need to be displayed according to the mockup screens. Edit pages/user.php and getInfo function in utils/User.php.
+3. Delete userid and bookid headers in tables.
 
-(done)3. Fix the login page so it redirects user after successful login to his account page or informs about the wrong credential. login.php and  
+4. CSS!!! Make it look good.
 
-(done)4. Create the databases with all fields for Users and Books.
+5. Populate the database with real books
 
-(done)5. Book.php functions according to architechture documentation.
-
-(done)6. Logout clear the SESSION vars and redirect to login.
-
-(done)7. In sell.php make condition a drop down to select from.(mint, good, poor)
-
-(done)8. Add password confirmation field and logic on the resitration page.
-
-(done)9. Verify input on the registration page. TEST
-
-10. Sanitize all inputs to prevent sql injection attacks. 
-
-(done)11. pages/books.php (display all books which are inlisted by user). Also create link for purhasing the books you want.
-
-12. Search page: Implement sorting.
-
-(done)13. Email (relates to 11)
-
-14. Website routing! Create all the nessesary links to navigate throughoput the website smoothly (without typing url).
-
-15. CSS!!! Make it look good.
-
-
+6. Change the way books are presented according to the docs. Make sure its is mobile first.

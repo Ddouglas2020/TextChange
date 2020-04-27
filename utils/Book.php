@@ -84,3 +84,18 @@ function buyBook($bookid, $buyerid) {
 	mail($selleremail,"TextChange purchase",$msg);
 	
 }
+
+function deleteBook($uid, $bookid) {
+	$db = connect_books();
+
+	$bookinfo = getBookInfo($bookid);
+	$sellerid = $bookinfo['userid'];
+	$res = 0;
+
+	if($uid==$sellerid) {
+		$res = $db->exec("DELETE FROM books WHERE bookid='$bookid'");
+	}
+
+	return $res;
+	
+}

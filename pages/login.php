@@ -12,7 +12,6 @@ if(!empty($_POST["login-user"])) {
 		echo 'Login or password is invalid';			
 	} else {
 		$_SESSION["uid"] = $authdata["userid"];
-		$_SESSION["upass"] = $authdata["password"];
 		header("location:user.php");
 	}
 
