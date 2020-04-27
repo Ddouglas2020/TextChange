@@ -1,4 +1,4 @@
-<?php header("location:login.php"); ?>
+<?php //header("location:login.php"); why??? ?>
 <html>
 <body>
 <meta name="viewport" content="width=device-width, initial-scaled=1">
