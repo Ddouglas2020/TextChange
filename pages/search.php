@@ -4,7 +4,7 @@
 <input type="text" name="search-text"><br>
 <input type="submit" name="search-book" value="Search">
 </form>
-
+<a href=user.php>Home</a>
 </body>
 </html>
 <?php
@@ -29,6 +29,8 @@ function array2Html($array, $table = true)
             $out .= '</tr>';
 	} else if ($key=='bookid') {
                 $out .= "<td><a href=\"buy.php?bookid=$value\"><div style=\"height:100%;width:100%\">Buy</div></a></td>";
+	} else if ($key=='price') {
+                $out .= "<td>$$value</td>";
         } else {
             $out .= "<td>$value</td>";
         }

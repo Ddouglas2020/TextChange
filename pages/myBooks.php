@@ -21,6 +21,8 @@ function array2Html($array, $table = true)
             $out .= '</tr>';
 	} else if ($key=='bookid') {
 		$out .= "<td><a href=\"deleteBook.php?bookid=$value\"><div style=\"height:100%;width:100%\">Remove</div></a></td>";
+	} else if ($key=='price') {
+		$out .= "<td>$$value</td>";
         } else {
             $out .= "<td>$value</td>";
         }
