@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+	background-color: blue;
+}
+
+h1 {
+	color: green;
+	text-align: center;
+}
+
+p {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+}
+
+input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+input[type=submit] {
+	background-color: green;
+}
+
+div {
+	border-radius: 5px;
+	background-color: gray;
+	padding: 20px;
+}
+
+</style>
+</head>
+</html>
+
+
+
