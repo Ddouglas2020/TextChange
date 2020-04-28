@@ -1,0 +1,45 @@
+<html>
+<head>
+<style>
+p {
+  
+}
+
+a[label=return]{
+	margin: 210px;
+}
+
+form[label=form] {
+  background-color: lightgray;
+  width: 50%;
+  margin: 275px auto;
+  border-radius:5px;
+  padding: 50px;
+  
+}
+
+input[name=search-text] {
+  width: 100%;
+  padding: 8px 20px;
+  
+}
+
+input[type=submit]{
+  width: 75%;
+	background-color: #23297a;
+	color:white;
+	padding: 14px 20px;
+	margin: 20px 85px;
+	border: black;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #191970;
+}
+
+
+</style>
+</head>
+</html>

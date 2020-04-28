@@ -1,0 +1,99 @@
+<html>
+<head>
+<style>
+body {
+  
+}
+
+h1 {
+  color: #23297a;
+  padding: 10px 500px;
+  
+}
+
+.regform {
+  width: 60%;
+  margin:auto;
+  background-color: lightgray;
+  padding: 50px;
+  border: black;
+  border-radius: 25px
+}
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 10px 0;
+}
+
+input[type=submit]:hover {
+  background-color: #191970;
+}
+
+input[type=submit] {
+  width: 100%;
+	background-color: #23297a;
+	color:white;
+	padding: 14px 0px;
+	border: black;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#message {
+  width: 60%;
+  display: none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+  margin-left: 235px;
+  border: black;
+  border-radius: 50px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+#message2 {
+  width: 60%;
+  display: none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+  margin-left: 235px;
+  border: black;
+  border-radius: 50px;
+}
+
+#message2 p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+}
+
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+}
+
+</html>

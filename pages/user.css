@@ -1,0 +1,44 @@
+<html>
+<head>
+<style>
+p {
+  
+}
+
+
+h1 {
+  background-color: #23297a;
+  padding: 20px;
+  margin-bottom: 60px;
+  color: #3cb371;
+  
+}
+
+h2 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 48;
+}
+
+div[id=info]{
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 30;
+  padding-top: 100px;
+  padding-bottom: 450px;
+}
+
+div[id=links] {
+  text-align: center;
+  position: relative;
+  background-color: #23297a;
+  padding-top: 50px;
+}
+a {
+  color: #3cb371;
+}
+
+
+</style>
+</head>
+</html>

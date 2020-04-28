@@ -1,0 +1,28 @@
+<html>
+<head>
+<style>
+p {
+  
+}
+div[id=table] {
+  padding: 20px 50px;
+  padding-bottom: 500px;
+  
+}
+h1 {
+  background-color: #23297a;
+  color: #3cb371;
+  padding: 20px;
+}
+div[id=link]{
+  text-align: center;
+  padding-top: 60px;
+  background-color: #23297a;
+}
+a {
+  color: #3cb371;
+}
+
+<style>
+</head>
+</html>
