@@ -1,4 +1,4 @@
-<?php header("location:login.php"); ?>
+<?php ob_start(); ?>
 <html>
 <body>
 <meta name="viewport" content="width=device-width, initial-scaled=1">
@@ -151,7 +151,7 @@ require_once("../utils/User.php");
 session_start();
 
 if(!empty($_POST["register-user"])) {
-	ob_start();
+	
 
 	$email = $_POST["email"]; //still need to validate
 	$password = hash('sha256',$_POST["password"]);
@@ -162,6 +162,7 @@ if(!empty($_POST["register-user"])) {
 }
 	else {
 		$insertId = insertUser($email, $password, $fullname, $hofstraid);
+		header("location:login.php"); 
 	}
 
 }

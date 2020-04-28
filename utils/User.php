@@ -25,7 +25,7 @@ function getUserInfo($uid) {
 function authUser($uname,$pass) {
 
 	$db = connect();
-	$res = $db->query("SELECT userid,password FROM users WHERE email='$uname' AND password='$pass'");
+	$res = $db->query("SELECT userid,password FROM users WHERE hofstraid='$uname' AND password='$pass'");
 	
 	$authdata = $res->fetchArray(1);
 	

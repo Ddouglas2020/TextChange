@@ -18,17 +18,17 @@ if(!empty($_POST["login-user"])) {
 
 }
 	
-
 ?>
-
 <html>
-<body>
-
+<link rel="stylesheet" href="login.css" type="text/css"> 
+<h1> Welcome to TextChange! </h1>
+<div>
 <form action="" method="post">
-Email:    <input type="text" name="username"><br>
+Hofstra ID:    <input type="text" name="username"><br>
 Password: <input type="password" name="password"><br>
 <input type="submit" name="login-user" value="Login">
+<!-- <a label="ps" href="">Forgot Password?</a><br><br> -->
+<a label="rg" href="register.php">Not Registered? Click Here to Get Started</a>
+</div>
 </form>
-</body>
-</html>
 

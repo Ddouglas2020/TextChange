@@ -3,6 +3,7 @@ require_once("../utils/Book.php");
 session_start();
 $id = $_SESSION["uid"];
 $arr = getBooks($id);
+if($id == NULL) { header("location:login.php"); }
 
 function array2Html($array, $table = true)
 {
@@ -33,10 +34,12 @@ function array2Html($array, $table = true)
 ?>
 
 <html>
+<link rel="stylesheet" type="text/css" href="myBooks.css"> 
+<h1>Your Registered Books</h1>
 <body>
-	<?php echo array2Html($arr);?>
+	<div id="table"> <?php echo array2Html($arr);?> </div>
 
-	<a href="user.php" title="return">Return to Homepage</a><br>
+	<div id="link"> <a href="user.php" title="return">Return to Homepage</a> </div>
 </body>
 <html>
 

@@ -1,16 +1,21 @@
-<html><body>
-
-<form action="" method="post">
-Search:<input type="text" name="search-text"><br>
-<input type="submit" name="search-book" value="Search">
-</form>
-
+<html>
+<link rel="stylesheet" type="text/css" href="search.css">
+<body>
+<div>
+	<form action="" method="post" label="form">
+	Search:<input type="text" placeholder="Title,ISBN, or Author name" name="search-text"><br>
+	<input type="submit" name="search-book" value="Search">
+	<a href="user.php" label="return">Return to Home Page</a> 
+	</form>
+</div>
 </body>
 </html>
 <?php
 require_once("../utils/Book.php");
 
 session_start();
+$id = $_SESSION["uid"];
+if($id == NULL) { header("location:login.php"); }
 
 function array2Html($array, $table = true)
 {
